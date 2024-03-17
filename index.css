@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body,html
+{
+    padding:0px;
+    margin:45px 0px 0px 0px;
+    background-color: smokegrey;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --hunyadi-yellow: #FEB555ff;
+    --electric-indigo: #5C2DD5ff;
+    --bittersweet: #F95D5Fff;
+    --seashell: #FCF3EDff;
+    --blue-violet: #7C47DBff;
+}
+#MenuBtn
+{
+    
+    margin:10px;
+    font-size:2.7rem;
+    font-weight:900;
+    color:var(--seashell);
+    font-weight:100;
+    cursor:pointer;
+}
+#NotificationBtn
+{
+    
+    margin:10px;
+    font-size:2.7rem;
+    font-weight:100;
+    color:var(--seashell);
+    font-weight:100;
+    cursor:pointer;
+}
+.navbar
+{
+    background-color:var(--bittersweet);
+    width:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:fit-content;
+    display:flex;
+    justify-content: space-between;
+    z-index:200;
+}
+.headingTxt
+{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 800;
+    color:grey;
+    font-size:2.8rem;
+    margin-left:20px;
+}
+.subheadingTxt
+{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    color:grey;
+    font-size:1.5rem;
+    margin-left:20px;
+}
+.container
+{
+    margin:20px 0px 10px 0px;
+    height:50vh;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding:5px 0px 0px 20px;
+    overflow-x:auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.container::-webkit-scrollbar
+{
+    display:none;
+}
+.cards
+{
+    background-color: lightgrey;
+    height:100%;
+    min-width:250px;
+    margin-right:5px;
+    border-radius:5px;
+    cursor:pointer;
+    border:2px solid transparent;
+    transition-duration:0.4s;
+}
+.cards:active
+{
+    transform:scale(0.9);
+}
+#DialogBox
+{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:300;
+    background-color:rgba(0, 0, 0, 0.612);
+    width:100%;
+    height:100vh;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+#DialogBox > div
+{
+    min-width:300px;
+    width:60%;
+    height:500px;
+    border-radius:10px;
+    background-color:var(--seashell);
+}
+#ActionBtn
+{
+    display:block;
+    margin:auto;
+    margin-top:40px;
+    padding:10px;
+    width:250px;
+    cursor:pointer;
+    font-family: 'Raleway',sans-serif;
+    border:none;
+    border-radius:10px;
+    background-color: var(--bittersweet);
+    color:white;
+    font-size:1.5rem;
+    transition-duration:0.3s;
+}
+#ActionBtn:active
+{
+    transform:scale(0.9);
+}
